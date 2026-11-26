@@ -7,7 +7,7 @@ import { YOLO, annotate } from "@ultralytics/yolo";
  * project site (including repositories served below /<repository-name>/).
  */
 const CONFIG = Object.freeze({
-  defaultModelPath: "models/yolo26n.onnx",
+  defaultModelPath: "models/best.onnx",
   defaultConfidence: 0.25,
   annotation: {
     lineWidth: 3,
