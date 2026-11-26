@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1020">
+  <meta name="theme-color" content="#050505">
   <meta name="description" content="A responsive, browser-based YOLO26 inference starter template powered by ONNX Runtime Web.">
   <title>UjangKedhu969 Studio — Browser Inference</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,19 +19,35 @@
     }
   </script>
   <script type="module" src="./app.js"></script>
+  <style>
+    html, body {
+      background-color: #050505 !important;
+      background-image:
+        linear-gradient(rgba(5, 5, 5, 0.45), rgba(5, 5, 5, 0.65)),
+        url('./bg.jpg') !important;
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-attachment: fixed !important;
+    }
+
+    .app-shell {
+      background: transparent !important;
+    }
+  </style>
 </head>
 <body>
   <div class="app-shell">
     <header class="topbar">
       <a class="brand" href="./" aria-label="UjangKedhu969 Studio home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none"><path d="M5 9.5h22v16H5z" stroke="currentColor" stroke-width="2"/><path d="M10 14h12M10 19h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 5.5h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
         </span>
         <span class="brand-copy"><strong>UjangKedhu969 <span>STUDIO</span></strong><small>IN-BROWSER INFERENCE TEMPLATE</small></span>
       </a>
       <div class="topbar-right">
         <span class="runtime-chip"><span class="pulse-dot"></span> CLIENT-SIDE RUNTIME</span>
-        <a class="text-link" href="https://docs.ultralytics.com/models/yolo26/" target="_blank" rel="noreferrer">YOLO26 docs <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://docs.ultralytics.com/models/yolo26/" target="_blank" rel="noreferrer">YOLO26 docs <span aria-hidden="true">↗️</span></a>
       </div>
     </header>
 
@@ -114,7 +130,7 @@
             <div class="field-group">
               <label for="model-path">Default model path</label>
               <div class="path-field"><span class="path-prefix">./</span><input id="model-path" type="text" value="models/best.onnx" spellcheck="false" autocomplete="off"></div>
-              <p class="field-note">Place your ONNX file in the <code>models/</code> folder, or select a local file below. <a class="inline-link" href="https://huggingface.co/prithivMLmods/YOLO26-ONNX/resolve/main/yolo26n/yolo26n.onnx" target="_blank" rel="noreferrer">Get YOLO26n ONNX ↗</a></p>
+              <p class="field-note">Place your ONNX file in the <code>models/</code> folder, or select a local file below. <a class="inline-link" href="https://huggingface.co/prithivMLmods/YOLO26-ONNX/resolve/main/yolo26n/yolo26n.onnx" target="_blank" rel="noreferrer">Get YOLO26n ONNX ↗️</a></p>
             </div>
             <div class="field-group">
               <label for="model-file">Use a different model <span class="optional-label">OPTIONAL</span></label>
